@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>  
+{% load static %}
+<title>Renz & Pat 01.18.23</title>
+<link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Forum">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+<style>
+body {font-family: "Forum", sans-serif; background-color: #F6F2E7;}
+.mySlides {display: none}
+.bg-img {
+  /* The image used */
+  background-image: url("{% static 'images/nav-bg.png' %}");
+
+
+  /* Center and scale the image nicely */
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+.bg-img2 {
+  /* The image used */
+  background-image: url("{% static 'images/details-bg.png' %}");
+
+
+  /* Center and scale the image nicely */
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+.bg-img3 {
+  /* The image used */
+  background-image: url("{% static 'images/make-it.png' %}");
+
+
+  /* Center and scale the image nicely */
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+.bg-img4 {
+  /* The image used */
+  background-image: url("{% static 'images/paper-bg.png' %}");
+  min-width: 100%;
+
+  /* Center and scale the image nicely */
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+@font-face {
+        font-family: "TheSeasons";
+        src : url("{% static 'images/TheSeasons.otf' %}") format("opentype")
+      } 
+@font-face {
+        font-family: "Baker";
+        src : url("{% static 'images/Baker.otf' %}") format("opentype")
+      } 
+@font-face {
+        font-family: "Darlington";
+        src : url("{% static 'images/Darlington.ttf' %}")
+      } 
+@font-face {
+        font-family: "Madelyn";
+        src : url("{% static 'images/Madelyn.otf' %}") format("opentype")
+      } 
+@font-face {
+        font-family: "Passionate";
+        src : url("{% static 'images/Passionate.otf' %}") format("opentype")
+      }     
+
+h3 {
+      font-family: "Forum";
+      font-size: 80px;
+}
+h4 {
+      font-family: "Baker";
+      font-size: 30pt;
+}
+h5 {
+      font-family: "Forum";
+      font-size: 25px;
+}
+body {
+      font-family: "Baker";
+      font-size: 25px;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  position: relative;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: black;
+}
+
+/* Centered section inside the top navigation */
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(0%, -50%);
+}
+
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+  }
+
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+.vertical-center{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -60%);
+}
+
+.vertical-center2{
+  position:absolute;
+  top:50%;
+  transform: translate(0%, -60%);
+}
+
+</style>
+</head>
+<body bg-color="#F6F2E7" id="home">
+
+      <!-- Top navigation -->
+<div class="topnav w3-top w3-bar bg-img  w3-hide-small w3-hide-medium ">
+
+      
+    
+      <!-- Left-aligned links (default) -->
+      <div style="margin-left: 16px;">
+        <a href="#top" class="active" style="font-family:Forum; font-size: 22px;">R&amp;P 01.18.23</a>
+      </div>
+    
+      <!-- Right-aligned links -->
+      <div class="topnav-right" style="margin-right: 16px;">
+        <a href="#story">Our Story</a>
+        <a href="#bigday">The Big Day</a>
+        <a href="#entourage">The Entourage</a>
+        <a href="#details">Details</a>
+        <button style="font-family: Baker; border-color: black; border-width: 0.1px; top: 50%; transform: translate(0%, 35%); margin-left:16px;
+        background-color: transparent; padding:0; line-height: 0;"><a href="#rsvp"><b>RSVP</b></a></button>
+      </div>
+     
+</div>
+
+<!-- Top navigation Small Screens-->
+<div class="topnav w3-top w3-bar bg-img w3-hide-large w3-padding-16">
+
+      <!-- Centered link -->
+      <div>
+        <a href="#top" class="active w3-margin-left" style="font-family: Forum; font-size: 25px; position: absolute; top: 50%; transform: translate(0%, -50%);  padding:0; ">R&amp;P 01.18.23</a>
+        <a href="javascript:void(0)" class=" w3-margin-right 3-hover-gray w3-right"  style="font-family: Forum; font-size: 25px ; padding:0; "  onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      </div>
+    
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-top w3-center" style="margin-top:62px; padding: 50px; max-height:80%;">
+  <a href="#story-mobile" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"  style="font-size: 20pt;">Our Story</a>
+  <a href="#bigday" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()" style="font-size: 20pt;"><nobr>The Big Day</nobr></a>
+  <a href="#entourage-mobile" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()" style="font-size: 20pt;"><nobr>The Entourage</nobr></a>
+  <a href="#details-mobile" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()" style="font-size: 20pt;">Details</a>
+  <a href="#rsvp-mobile" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()" style="font-size: 20pt;"><b>RSVP</b></a>
+</div>
+
+
+  <!-- Getting Married Banner -->
+
+  <!-- Large Screen -->
+  <header class="w3-content w3-center w3-hide-small w3-hide-medium" style="min-width:100%; margin-top: 50px;" >
+    <div style="position: relative">
+      <img
+        class="w3-image"
+        src="{% static 'images/banner.png' %}"
+        alt="Image 1"
+        style="min-width: 100%"
+      />
+      <p class="vertical-center w3-container w3-text-black w3-hide-small" >
+        <span style="font-family:Forum;font-size: 2.4vw;">We're getting married!</span> <br>  
+        <nobr style ="font-family:Forum; font-size: 5.4vw; letter-spacing:0.5vw">RENZ &amp; PATRICIA</nobr> <br>
+        <span style="font-family:Forum;font-size: 1.8vw">January 18, 2023</span>   
+      </p>
+    </div>
+</header>  
+<!-- Mobile Screen-->
+<header class="w3-content w3-center w3-hide-large" style="min-width:100%; margin-top: 60px; position:relative">
+  <img
+    class="w3-image"
+    src="{% static 'images/banner-mobile.png' %}"
+    alt="Image 1"
+    style="min-width: 100%"
+  />
+  <p class = "w3-display-middle w3-center w3-hide-large"  style=" position:absolute; top: 15%; margin-top: 65px;  line-height: 1;">
+      <!-- <nobr style="font-family:Forum; font-size:14pt; letter-spacing: 0.6pt;">We're getting married!<br></nobr><br><bR> -->
+        <span style="font-family:Forum;font-size: 4.2vw">We're getting married!</span> <br>
+      <nobr style="font-family:Forum; font-size: 8vw; line-height: 2; letter-spacing: 1pt;">RENZ &amp; PATRICIA</nobr><br>
+      <span style="font-family:Forum;font-size: 3.2vw">January 18, 2023</span> 
+  </p>
+</header> 
+<!-- end of Getting Married Banner -->
+
+
+<!-- Our Story Section -->
+
+<!-- Large Screen -->
+<div class="w3-container w3-center w3-hide-small w3-hide-medium" style="background-color: #E8DDD4; width:100%; padding-top:40px;" id="story">
+  <div class = "w3-content">
+    <img
+        class="w3-image"
+        src="{% static 'images/flower1.png' %}"
+        alt="flower1"
+        style="max-width: 5%; min-width: 50px; "
+      />
+    <h4 style="margin-top: -20px;">Our Story</h4>
+  </div>
+  <div class = "w3-third" >
+        <p style=   "text-align:left; line-height: 1.5;
+                    margin-left: 10%; margin-right: -20px; margin-bottom: 40px;
+                    font-size: 23px; font-family:Forum">"It was a match! Swiping her right was the best thing that happened to me. I was mesmerized by her smile. Since then, I couldnt look away. Little did I know, I was swiping right to my future wife."
+          <br><span style = "font-family: Darlington; font-size: 26pt; line-height: 1;">&nbsp;Renz Lenard Bacani</span>            
+        </p>
+  </div>
+  
+  <div class = "w3-third w3-content" >
+        <img
+            class="w3-image"
+            src="{% static 'images/story.png' %}"
+            alt="flower1"
+            style="max-width: 80%;"
+          />
+  </div>
+  <div class = "w3-third w3-left w3-hide-small" style="margin-top: 160px;">
+        <p class = "t"
+        style=      "text-align:left;
+                    margin-left: -20px; margin-right: 10%;
+                    font-size: 23px; font-family:Forum">
+        
+        "It took me courage to meet him. Good thing I did. Six years ago, we're strangers, became best friends, true lovers, and badass partners in life."       
+        <br><span style = "font-family: Darlington; font-size: 26pt; line-height: 1;">&nbsp;Patricia Anne Buenaventura</span> 
+        </p>
+  </div>
+  <div class=" w3-container w3-center" style="background-color: #E8DDD4; width:100%">
+    <p style="font-family: Forum; font-size: 23px;">Now, we're preparing to enter a new chapter of our love story.</p><br>
+  </div>
+</div>
+
+
+<!-- Mobile Screen -->
+<div class="w3-container w3-center w3-hide-large" style="background-color: #E8DDD4; width:100%; padding-top:40px;" id="story">
+  <div class = "w3-content">
+    <img  id="story-mobile"
+        class="w3-image w3-center"
+        src="{% static 'images/flower1.png' %}"
+        alt="flower1"
+        style="max-width: 7%; min-width: 50px; "
+      />
+    <p style="font-size: 6vmin; margin-top: -20px;">Our Story</p>
+  </div>
+  <div class = "w3-content" >
+    <img
+        class="w3-image"
+        src="{% static 'images/story.png' %}"
+        alt="flower1"
+        style="width: 80%; max-width: 500px; margin-top: -20px;"
+      />
+  </div>
+  <div class = "w3-right" >
+        <p style=   "text-align:right; 
+                    margin-left: 50px; margin-bottom: 10px;
+                    font-size: 4vmin; font-family:Forum">
+                    "It was a match! Swiping her right was the best thing that happened to me. I was mesmerized by her smile. Since then, I couldnt look away. Little did I know, I was swiping right to my future wife." 
+                    <br><span style = "font-family: Darlington; font-size: 7vmin; line-height: 1;">&nbsp;Renz Lenard Bacani</span>        
+        </p>
+  </div>
+
+  <div class = "w3-left">
+        <p class = "t"
+        style=      "text-align:left;
+                    margin-right: 50px;
+                    font-size: 4vmin; font-family:Forum">
+        
+        "It took me courage to meet him. Good thing I did. Six years ago, we're strangers, became best friends, true lovers, and badass partners in life."        
+        <br><span style = "font-family: Darlington; font-size: 7vmin; line-height: 1;">&nbsp;Patricia Anne Buenaventura</span> 
+        </p>
+  </div>
+  <div class=" w3-container w3-center" style="background-color: #E8DDD4; width:100%">
+    <p style="font-family: Forum; font-size: 4vmin;">Now, we're preparing to enter a new chapter of our love story.</p><br>
+  </div>
+</div>
+
+<!-- end of Story Section -->
+
+
+  
+<!-- Ceremony Section -->
+<div class="w3-content" style="min-width:100%;background-color: #F6F2E7;" id = "bigday">
+
+  <div class="legs" style="background-color:#F6F2E7; height: 100%;">
+    <img
+          id = "church_img"
+          class="w3-half"
+          src="{% static 'images/church2.png' %}"
+          alt="Image 1"
+          style="float:left; background-color:#F6F2E7"
+        />
+    <div class="w3-half w3-center" style="position: relative;">
+      <!-- For Large Screens -->
+      <img
+        class="w3-image w3-hide-small  w3-hide-medium"
+        src="{% static 'images/artsy-borders.png' %}"
+        alt="Image 1"
+        style="min-width: 100%; background-color:#F6F2E7"/>
+      <p class = "vertical-center w3-center w3-hide-small w3-hide-medium" style="background-color:#F6F2E7">
+          <nobr style="font-family:Forum; font-size:16pt; letter-spacing: 1px;">Bear witness to our special day.<br></nobr><br><br>
+          <span style="font-family:Forum; font-size:40pt;  letter-spacing:5px; line-height: 0px;">C</span><span style="font-family:Forum; font-size:35pt;  letter-spacing:5px; line-height: 0px;">EREMONY</span><br>
+          <span style="font-family:Forum; font-size:30pt;  letter-spacing:5px">8:30 AM</span><br><br>
+          <span style="font-family:Forum; font-size:20pt" >Our Lady of Remedies<br>Malate Church</span><br>
+          <a href="https://goo.gl/maps/Qf7wNFbHvhXPqSCS6" target="_blank" style="font-family:Forum; font-size:20pt" >Map</a>
+      </p>
+      <!-- For Small Screens -->
+      <img
+        class="w3-image w3-hide-large"
+        src="{% static 'images/artsy-borders-mobile.png' %}"
+        alt="Image 1"
+        style="min-width: 100%; background-color:#F6F2E7"/>
+        <p class = "vertical-center w3-center w3-hide-large"  style="margin-top: 5%; margin-bottom: 0px; line-height: 1;">
+            <nobr style="font-family:Forum; font-size:12pt; letter-spacing: 0.6pt;">Bear witness to our special day.<br></nobr><br>
+            <span style="font-family:Forum; font-size:30pt;  letter-spacing:2pt; line-height: 1.5;">C</span><span style="font-family:Forum; font-size:25pt;  letter-spacing:2pt; line-height: 1.5;">EREMONY</span><br>
+            <span style="font-family:Forum; font-size:20pt;  letter-spacing:1pt">8:30 AM</span><br><br>
+            <span style="font-family:Forum; font-size:16pt; line-height:1.2" >Our Lady of Remedies<br>Malate Church<br></span><br>
+            <!-- <span style="font-family:Forum; font-size:10pt; line-height:0.4" >99 Dapitan St.<br>cor. Biak na Bato St.<br>Quezon City</span><br><br> -->
+            <a href="https://goo.gl/maps/Qf7wNFbHvhXPqSCS6" target="_blank" style="font-family:Forum; font-size:16pt; line-height:1.2">Map</a>
+      </p>
+    </div>    
+  </div>
+</div>
+<!-- End of Ceremony Section -->
+
+
+<!-- Reception Section -->
+<div class="w3-content" style="min-width:100%;background-color: #FBF1EC;">
+
+  <div class="legs" style="background-color:#FBF1EC; height: 100%; ">
+    <div class="w3-half" style = "float:right">
+      <!-- For Large Screens -->
+      <img
+          id = "reception_img"
+          src="{% static 'images/reception.png' %}"
+          alt="Image 1"
+          style="width:100%; float:right; background-color: black"
+        />
+    </div>
+    <div class="w3-half w3-center" style="position: relative; float: left; background-color: #FBF1EC;">
+      <img
+        class="w3-image w3-hide-small  w3-hide-medium"
+        src="{% static 'images/artsy-borders.png' %}"
+        alt="Image 1"
+        style="min-width: 100%"/>
+      <!-- For Large Screens -->
+      <p class = "vertical-center w3-center w3-hide-small w3-hide-medium" style = "margin-top: 5%; margin-bottom: 5%; line-height: 1;">
+          <nobr style="font-family:Forum; font-size:16pt; letter-spacing: 1px;">Celebrate and dine with us!<br></nobr><br>
+          <span style="font-family:Forum; font-size:40pt;  letter-spacing:5px; line-height: 1.5;">R</span><span style="font-family:Forum; font-size:35pt;  letter-spacing:5px; line-height: 1.5;">ECEPTION</span><br>
+          <span style="font-family:Forum; font-size:30pt;  letter-spacing:5px">11:30 AM</span><br><br>
+          <span style="font-family:Forum; font-size:26pt; line-height:1.5" >Meyer's Place</span><br>
+          <span style="font-family:Forum; font-size:16pt; line-height:0.6" >99 Dapitan St.<br>cor. Biak na Bato St.<br>Quezon City</span><br>
+          <a href="https://goo.gl/maps/6BxpUQBpWT6CdzfH7" target="_blank" style="font-family:Forum; font-size:20pt; line-height:1.5">Map</a>
+      </p>
+      <!-- For Small Screens -->
+      <img
+        class="w3-image w3-hide-large"
+        src="{% static 'images/artsy-borders-mobile.png' %}"
+        alt="Image 1"
+        style="min-width: 100%"/>
+        <p class = "vertical-center w3-center w3-hide-large"  style="margin-top: 5%; margin-bottom: 5%; line-height: 1;">
+            <nobr style="font-family:Forum; font-size:12pt; letter-spacing: 0.6pt;">Celebrate and dine with us!<br></nobr><br>
+            <span style="font-family:Forum; font-size:30pt;  letter-spacing:2pt; line-height: 1.5;">R</span><span style="font-family:Forum; font-size:25pt;  letter-spacing:2pt; line-height: 1.5;">ECEPTION</span><br>
+            <span style="font-family:Forum; font-size:20pt;  letter-spacing:1pt">11:30 AM</span><br><br>
+            <span style="font-family:Forum; font-size:16pt; line-height:1.2" >Meyer's Place</span><br>
+            <span style="font-family:Forum; font-size:10pt; line-height:0.4" >99 Dapitan St.<br>cor. Biak na Bato St.<br>Quezon City</span><br>
+            <a  id="entourage-mobile" href="https://goo.gl/maps/6BxpUQBpWT6CdzfH7" target="_blank" style="font-family:Forum; font-size:16pt; line-height:1.2">Map</a>
+        </p>
+    </div>    
+  </div>
+</div>
+<!-- End of Reception Section -->
+
+<!-- Entourage Section -->
+<!-- Large Screen -->
+<div  class= "w3-container w3-hide-small w3-center" style="width: 100%" >
+  <div class = "bg-img4" style="width: 100%"      >
+    <img id="entourage"
+    class="w3-image"
+    src="{% static 'images/flower3-top.png' %}"
+    alt="Image 1"
+    style="width: 70%"/>
+      <p  class = "w3-center " style = "line-height: 1;  ">
+          <nobr style="font-family:Passionate; font-size:3vmax; letter-spacing: 1pt; line-height: 1.3;">Bridal Entourage</nobr>
+      </p>
+      
+      <!-- Parents -->
+      <div class = "w3-container" style="line-height: 1.3; margin-left: 10%; margin-right:  10%; text-align: center;">
+        
+        <div style=" display:flex">
+          <p style = "flex: 50%; text-align: right ; margin-right: 5%">
+            <b style="font-family:Baker; font-size:15pt; ">Parent of the Bride</b><br>
+            <i style="font-family:Roboto; font-size:16pt; text-align: right ;">Ms. Mary Ann R. Buenaventura</i>
+          </p>
+          <p style = "flex: 50%; text-align: left ; margin-left: 5%">
+            <b style="font-family:Baker; font-size:15pt; text-align: left;">Parents of the Groom</b><br>
+            <i style="font-family:Roboto; font-size:16pt;text-align: left; ">Mr. Roberto C. Bacani</i><br>
+            <i style="font-family:Roboto; font-size:16pt; text-align: left ">Mrs. Lourdes B. Bacani</i><br>
+          </p>
+        </div>
+      </div>
+
+      <!-- Principal Sponsors -->
+      <div class = "w3-container" style="line-height: 1.3; margin-left: 10%; margin-right:  10%; text-align: center;">
+        
+        <b style="font-family:Baker; font-size:16pt; ">Principal Sponsors</b>
+        
+        <div style=" display:flex; margin-top:-16px">
+          <p style = "flex: 50%; text-align: right ; margin-right: 5%">
+            <i style="font-family:Roboto; font-size:16pt; text-align: right ;">Vice Mayor Ronnie M. Ortiguerra</i><br>
+            <i style="font-family:Roboto; font-size:16pt; text-align: right ;">Mr. Serafin R. Buenaventura</i><br>
+            <i style="font-family:Roboto; font-size:16pt; text-align: right ;">Arch. Windel E. Medina</i><br>
+            <i style="font-family:Roboto; font-size:16pt; text-align: right ;">Mr. Erwin T. Mozo</i>
+          </p>
+          <p style = "flex: 50%; text-align: left ; margin-left: 5%">
+            <i style="font-family:Roboto; font-size:16pt;text-align: left; ">Mrs. Nenita B. Bucud</i><br>
+            <i style="font-family:Roboto; font-size:16pt; text-align: right ;">Mrs. Marirose M. Buenaventura</i><br>
+            <i style="font-family:Roboto; font-size:16pt; text-align: right ;">Mrs. Evangeline Custodio</i><br>
+            <i style="font-family:Roboto; font-size:16pt; text-align: right ;">Mrs. Mapee R. Mozo</i>
+            
+          </p>
+        </div>
+      </div>
+
+      <!-- Medyo Honor -->
+      <div class = "w3-container" style="line-height: 1.3; margin-left: 10%; margin-right:  10%; text-align: center; margin-top:-28px">
+        <div style=" display:flex">
+          <p style = "flex: 50%; text-align: right ; margin-right: 5%">
+            <b style="font-family:Baker; font-size:15pt; ">Best Man</b><br>
+            <i style="font-family:Roboto; font-size:16pt; text-align: right ;">Mr. Marc Kevin A. Tomas</i>
+          </p>
+          <p style = "flex: 50%; text-align: left ; margin-left: 5%">
+            <b style="font-family:Baker; font-size:15pt; text-align: left;">Maid of Honor</b><br>
+            <i style="font-family:Roboto; font-size:16pt;text-align: left; ">Ms. Rhea Loreign B. Bacani</i><br>
+          </p>
+        </div>
+      </div>
+      <!-- Secondary Sponsors -->
+      <div class = "w3-container" style="line-height: 1.3; margin-left: 10%; margin-right:  10%; text-align: center;">
+        <div style=" display:flex; margin-top:-16px">
+          <p style = "flex: 100%; text-align: center">
+            <b style="font-family:Baker; font-size:16pt; ">Secondary Sponsors</b><br>
+            <b style="font-family:Baker; font-size:15pt; text-align: center;">To Cover Us As One</b><br>
+            <i style="font-family:Roboto; font-size:16pt;text-align: center; ">Ms. Rhea Loreign B. Bacani</i><br>
+            <i style="font-family:Roboto; font-size:16pt; text-align: center ;">Mr. Marc Kevin A. Tomas</i>
+          </p>
+        </div>
+      </div>
+
+      <!-- Binding Light -->
+      <div class = "w3-container" style="line-height: 1.3; margin-left: 10%; margin-right:  10%; text-align: center; margin-top:-28px">
+        <div style=" display:flex">
+          <p style = "flex: 50%; text-align: right ; margin-right: 5%">
+            <b style="font-family:Baker; font-size:15pt; ">To Bind Us Together</b><br>
+            <i style="font-family:Roboto; font-size:16pt; text-align: right ;">Mr. Rafael A. Castro</i><br>
+            <i style="font-family:Roboto; font-size:16pt; text-align: right ;">Ms. Edlyn B. Debuque</i>
+          </p>
+          <p style = "flex: 50%; text-align: left ; margin-left: 5%">
+            <b style="font-family:Baker; font-size:15pt; text-align: left;">To Light Our Path</b><br>
+            <i style="font-family:Roboto; font-size:16pt; text-align: right ;">Mr. John Jonas O. Poyaoan</i><br>
+            <i style="font-family:Roboto; font-size:16pt; text-align: right ;">Ms. Maria Emmanuelle R. Bravo</i>
+          </p>
+        </div>
+      </div>
+      
+      <!-- Bearers -->
+      <div class = "w3-container" style="line-height: 1.3; margin-left: 10%; margin-right:  10%; text-align: center; margin-top:-28px">
+        <div style=" display:flex">
+          <p style = "flex: 50%; text-align: right ; margin-right: 5%">
+            <b style="font-family:Baker; font-size:15pt; ">Bible Bearer</b><br>
+            <i style="font-family:Roboto; font-size:16pt; text-align: right ;">Mr. Mikko B. Tolentino</i>
+          </p>
+          <p style = "flex: 50%; text-align: left ; margin-left: 5%">
+            <b style="font-family:Baker; font-size:15pt; text-align: left;">Coin Bearer</b><br>
+            <i style="font-family:Roboto; font-size:16pt;text-align: left; ">Mr. Cedric B. Cortez</i><br>
+          </p>
+        </div>
+      </div>
+      <!-- Ring Bearer -->
+      <div class = "w3-container" style="line-height: 1.3; margin-left: 10%; margin-right:  10%; text-align: center; margin-top:-28px">
+        <div style=" display:flex; margin-top:-16px">
+          <p style = "flex: 100%; text-align: center">
+            <b style="font-family:Baker; font-size:15pt; ">Ring Bearer</b><br>
+            <i style="font-family:Roboto; font-size:16pt; text-align: center ;">Mr. Rainiell B. Bacani</i>
+          </p>
+        </div>
+      </div>
+      <!-- Flower Girls -->
+      <div class = "w3-container" style="line-height: 1.3; margin-left: 10%; margin-right:  10%; text-align: center;  margin-top:0px">
+        <div style=" display:flex; margin-top:-16px">
+          <p style = "flex: 100%; text-align: center">
+            <b style="font-family:Baker; font-size:15pt; ">To Shower Our Aisle with Flowers</b><br>
+            <i style="font-family:Roboto; font-size:16pt; text-align: center ;">Lourdine Mae Debuque</i><br>
+            <i style="font-family:Roboto; font-size:16pt; text-align: center ;">Aleria Franchesca R. Debuque</i><br>
+            <i style="font-family:Roboto; font-size:16pt; text-align: center ;">Mary Buenafe Debuque</i>
+          </p>
+        </div>
+        
+      </div>
+        <img
+          class="w3-image w3-center"
+          src="{% static 'images/flower3-bottom.png' %}"
+          style="width: 70%; "/>
+  </div>
+    
+</div>  
+<!-- end of Entourage Section for Large Screens -->
+
+<!-- Entourage Section -->
+<!-- Small Screen -->
+<div class= "w3-container w3-hide-large w3-hide-medium w3-center" style="width: 100%" >
+  <div class = "bg-img4"  >
+    <img  
+    class="w3-image"
+    src="{% static 'images/flower3-top.png' %}"
+    alt="Image 1"
+    style="width: 70%"/>
+      <p  class = "w3-center " style = "line-height: 1;  ">
+          <span style="font-family:Passionate; font-size:2.6vmax; letter-spacing: 1pt; line-height: 1;">Bridal Entourage</span>
+      </p>
+      
+      <!-- Parents -->
+      <div class = "w3-container" style="line-height: 1; margin-left: 0%; margin-right:  0%; text-align: center; margin-top:-40px">
+        
+        <div style=" display:flex">
+          <p style = "flex: 50%; text-align: right ; margin-right: 4%">
+            <b style="font-family:Baker; font-size:3vmin ">Parent of the Bride</b><br>
+            <nobr style="font-family:Roboto; font-size:3.1vmin; text-align: right ;"><i>Ms. Mary Ann R. Buenaventura</i></nobr>
+          </p>
+          <p style = "flex: 50%; text-align: left ; margin-left: 4%">
+            <b style="font-family:Baker; font-size:3vmin; text-align: left;">Parents of the Groom</b><br>
+            <i style="font-family:Roboto; font-size:3.1vmin;text-align: left; ">Mr. Roberto C. Bacani</i><br>
+            <i style="font-family:Roboto; font-size:3.1vmin; text-align: left ">Mrs. Lourdes B. Bacani</i>
+          </p>
+        </div>
+      </div>
+
+      <!-- Principal Sponsors -->
+      <div class = "w3-container" style="line-height: 1; margin-left: 0%; margin-right:  0%; text-align: center; margin-top:-28px">
+        
+        <b style="font-family:Baker; font-size:3vmin; ">Principal Sponsors</b>
+        
+        <div style=" display:flex; margin-top:-22px">
+          <p style = "flex: 50%; text-align: right ; margin-right: 4%">
+            <nobr><i style="font-family:Roboto; font-size:3.1vmin; text-align: right ;">V. Mayor Ronnie M. Ortiguerra</i></nobr><br>
+            <nobr><i style="font-family:Roboto; font-size:3.1vmin; text-align: right ;">Mr. Serafin R. Buenaventura</i></nobr><br>
+            <nobr><i style="font-family:Roboto; font-size:3.1vmin; text-align: right ;">Arch. Windel E. Medina</i></nobr><br>
+            <nobr><i style="font-family:Roboto; font-size:3.1vmin; text-align: right ;">Mr. Erwin T. Mozo</i></nobr>
+          </p>
+          <p style = "flex: 50%; text-align: left ; margin-left: 4%">
+            <nobr><i style="font-family:Roboto; font-size:3.1vmin;text-align: left; ">Mrs. Nenita B. Bucud</i></nobr><br>
+            <nobr><i style="font-family:Roboto; font-size:3.1vmin; text-align: right ;">Mrs. Marirose M. Buenaventura</i></nobr><br>
+            <nobr><i style="font-family:Roboto; font-size:3.1vmin; text-align: right ;">Mrs. Evangeline Custodio</i></nobr><br>
+            <nobr><i style="font-family:Roboto; font-size:3.1vmin; text-align: right ;">Mrs. Mapee R. Mozo</i></nobr>
+            
+          </p>
+        </div>
+      </div>
+
+      <!-- Medyo Honor -->
+      <div class = "w3-container" style="line-height: 1; margin-left: 0%; margin-right:  0%; text-align: center; margin-top:-40px">
+        <div style=" display:flex">
+          <p style = "flex: 50%; text-align: right ; margin-right: 4%">
+            <b style="font-family:Baker; font-size:3.1vmin; ">Best Man</b><br>
+            <nobr><i style="font-family:Roboto; font-size:3.1vmin; text-align: right ;">Mr. Marc Kevin A. Tomas</i></nobr>
+          </p>
+          <p style = "flex: 50%; text-align: left ; margin-left: 4%">
+            <nobr><b style="font-family:Baker; font-size:3vmin; text-align: left;">Maid of Honor</b></nobr><br>
+            <nobr><i style="font-family:Roboto; font-size:3.1vmin;text-align: left; ">Ms. Rhea Loreign B. Bacani</i></nobr><br>
+          </p>
+        </div>
+      </div>
+      <!-- Secondary Sponsors -->
+      <div class = "w3-container" style="line-height: 1; margin-left: 0%; margin-right:  0%; text-align: center; margin-top:-28px">
+        <div style=" display:flex; margin-top:-16px">
+          <p style = "flex: 100%; text-align: center">
+            <b style="font-family:Baker; font-size:3.1vmin; ">Secondary Sponsors</b><br>
+            <b style="font-family:Baker; font-size:3vmin; text-align: center;">To Cover Us As One</b><br>
+            <i style="font-family:Roboto; font-size:3.1vmin;text-align: center; ">Ms. Rhea Loreign B. Bacani</i><br>
+            <i style="font-family:Roboto; font-size:3.1vmin; text-align: center ;">Mr. Marc Kevin A. Tomas</i>
+          </p>
+        </div>
+      </div>
+
+      <!-- Binding Light -->
+      <div class = "w3-container" style="line-height: 1; margin-left: 0%; margin-right:  0%; text-align: center; margin-top:-40px">
+        <div style=" display:flex">
+          <p style = "flex: 50%; text-align: right ; margin-right: 4%">
+            <b style="font-family:Baker; font-size:3vmin; ">To Bind Us Together</b><br>
+            <nobr><i style="font-family:Roboto; font-size:3.1vmin; text-align: right ;">Mr. Rafael A. Castro</i></nobr><br>
+            <nobr><i style="font-family:Roboto; font-size:3.1vmin; text-align: right ;">Ms. Edlyn B. Debuque</i></nobr>
+          </p>
+          <p style = "flex: 50%; text-align: left ; margin-left: 4%">
+            <b style="font-family:Baker; font-size:3vmin; text-align: left;">To Light Our Path</b><br>
+            <nobr><i style="font-family:Roboto; font-size:3.1vmin; text-align: right ;">Mr. John Jonas O. Poyaoan</i></nobr><br>
+            <nobr><i style="font-family:Roboto; font-size:3.1vmin; text-align: right ;">Ms. Maria Emmanuelle R. Bravo</i></nobr>
+          </p>
+        </div>
+      </div>
+      
+      <!-- Bearers -->
+      <div class = "w3-container" style="line-height: 1; margin-left: 0%; margin-right:  0%; text-align: center; margin-top:-40px">
+        <div style=" display:flex">
+          <p style = "flex: 50%; text-align: right ; margin-right: 4%">
+            <b style="font-family:Baker; font-size:3vmin; ">Bible Bearer</b><br>
+            <nobr><i style="font-family:Roboto; font-size:3.1vmin; text-align: right ;">Mr. Mikko B. Tolentino</i></nobr>
+          </p>
+          <p style = "flex: 50%; text-align: left ; margin-left: 4%">
+            <b style="font-family:Baker; font-size:3vmin; text-align: left;">Coin Bearer</b><br>
+            <nobr><i style="font-family:Roboto; font-size:3.1vmin;text-align: left; ">Mr. Cedric B. Cortez</i></nobr><br>
+          </p>
+        </div>
+      </div>
+      <!-- Ring Bearer -->
+      <div class = "w3-container" style="line-height: 1; margin-left: 0%; margin-right:  0%; text-align: center; margin-top:-28px">
+        <div style=" display:flex; margin-top:-16px">
+          <p style = "flex: 100%; text-align: center">
+            <b style="font-family:Baker; font-size:3vmin; ">Ring Bearer</b><br>
+            <i style="font-family:Roboto; font-size:3.1vmin; text-align: center ;">Mr. Rainiell B. Bacani</i>
+          </p>
+        </div>
+      </div>
+      <!-- Flower Girls -->
+      <div class = "w3-container" style="line-height: 1; margin-left: 0%; margin-right:  0%; text-align: center; margin-top:-28px">
+        <div style=" display:flex; margin-top:-16px">
+          <p style = "flex: 100%; text-align: center">
+            <b style="font-family:Baker; font-size:3vmin; ">To Shower Our Aisle with Flowers</b><br>
+            <i style="font-family:Roboto; font-size:3.1vmin; text-align: center ;">Lourdine Mae Debuque</i><br>
+            <i style="font-family:Roboto; font-size:3.1vmin; text-align: center ;">Aleria Franchesca R. Debuque</i><br>
+            <i style="font-family:Roboto; font-size:3.1vmin; text-align: center ;">Mary Buenafe Debuque</i>
+          </p>
+        </div>
+        
+      </div>
+        <img
+          class="w3-image w3-center"
+          src="{% static 'images/flower3-bottom.png' %}"
+          style="width: 70%; "/>
+  </div>
+    
+</div>  
+<!-- end of Entourage Section for Small  Screens -->
+
+
+<!-- Details Section -->
+<!-- Large Screen -->
+<div class= "w3-container w3-center w3-hide-small  w3-hide-medium" style="min-width: 100%;background-color: #FBF1EC;" >
+  <div class = "bg-img2 w3-padding-16 w3-center"   >
+
+      <p class = "w3-center " style = "line-height: 1;  ">
+        <img id="details"
+        class="w3-image"
+        src="{% static 'images/flower-crown.png' %}"
+        alt="Image 1"
+        style="width: 10%"/>
+          <br>
+          <nobr style="font-family:Baker; font-size:32pt; letter-spacing: 1pt; line-height: 1.5;">Wedding Details<br></nobr>
+      </p>
+      <!-- Dress Code -->
+      <div style="margin-left:300px;margin-right:300px;">
+        <nobr style="font-family:Baker; font-size:24pt;">Dress Code</nobr><br>
+        <div class = "w3-third w3-content" style="position: relative; line-height: 1;">
+          Ninong<br>
+          <span style="font-family: Forum; font-size: 16pt; line-height: 0.5;">Black Coat and Tie<br>Black Pants and Shoes</span>
+        </div>
+        <div class = "w3-third" style="line-height: 1;">
+          <img
+            class="w3-image"
+            src="{% static 'images/dress-sample.png' %}"
+            alt="Dress Sample"
+            style="min-width: 10%; max-width: 150px;"/>
+            <br><br>Guests<br>
+            <span style="font-family: Forum; font-size: 16pt;">Semi-formal</span>
+            <br><br>
+            In shades of
+                     
+        </div>
+        <div class = "w3-third" style="line-height: 1;">
+          Ninang<br>
+          <span style="font-family: Forum; font-size: 16pt;">Long Dress</span>
+        </div>
+        <img
+        class="w3-image w3-center"
+        src="{% static 'images/palette.png' %}"
+        alt="Dress Sample"
+        style="min-width: 10%; max-width: 240px;"/>
+      </div>
+      
+      <!-- Gift Notes -->
+      <div class = "w3-container" style="line-height: 1.5; padding-top: 2px; margin-left: 30%; margin-right:  30%;">
+        <br>
+        <img
+          class="w3-image"
+          src="{% static 'images/flower2.png' %}"
+          style="min-width: 10%; width: 300px;"/><br>      
+        <span style="font-family:Baker; font-size:24pt;">Gift Notes</span><br>
+        <span style="font-family:Forum; font-size:16pt; ">Your presence at our wedding is the only present we
+                                                          request. However, if you wish to bless our special day,
+                                                          monetary gifts will be very much appreciated.</span><br>
+      </div>
+
+      <!-- Safety Reminders -->
+      <div class = "w3-container" style="line-height: 1.5; padding-top: 16px; margin-left: 20%; margin-right:  20%;">
+        <img
+          class="w3-image"
+          src="{% static 'images/flower2.png' %}"
+          style="min-width: 10%; width: 300px;"/><br>      
+        <span style="font-family:Baker; font-size:24pt;">Safety Reminders</span><br>
+        <span style="font-family:Forum; font-size:16pt; ">For the safety of our guests and our newlyweds, we are requesting
+                                                          that all in attendance have been fully vaccinated with a booster.<br>This
+                                                          means you have been fully vaccinated and boosted.</span><br>
+      </div>
+      <!-- Capture The Love -->
+      <div class = "w3-container" style="line-height: 1.5; padding-top: 16px; margin-left: 20%; margin-right:  20%;">
+        <img
+          class="w3-image"
+          src="{% static 'images/flower2.png' %}"
+          style="min-width: 10%; width: 300px;"/><br>      
+        <span style="font-family:Baker; font-size:24pt;">Capture the Love</span><br>
+        <img
+          class="w3-image"
+          src="{% static 'images/instagram.png' %}"
+          style="min-width: 5%; width: 20px;"/>    
+          <img
+            class="w3-image"
+            src="{% static 'images/facebook.png' %}"
+            style="min-width: 5%; width: 20px;"/><br> 
+        <span style="font-family:Forum; font-size:16pt; ">Tag your photos on our special day so we can see things on your way. 
+                                                          <br>Please tag us using our official hashtag.</span><br>
+        <span style="font-family:Baker; font-size:28pt; color: #9B6250; line-height: 3;">#PATnallymatchedwithRENZ</span><br>
+      </div>
+      
+          
+    </div>
+</div>  
+<!-- end of Details Section for Large Screens -->
+
+
+<!-- Details Section -->
+<!-- Small Screen -->
+<div class= "w3-container w3-center w3-hide-large" style="min-width: 100%;background-color: #FBF1EC">
+  <div class = "bg-img2 w3-padding-16 w3-center"  >
+
+      <p id="details-mobile" class = "w3-center" style = "line-height: 1;  ">
+        <img
+        class="w3-image"
+        src="{% static 'images/flower-crown.png' %}"
+        alt="Image 1"
+        style="width: 30%"/>
+          <br>
+          <nobr style="font-family:Baker; font-size:32pt; letter-spacing: 1pt; line-height: 1.5;">Wedding Details<br></nobr>
+      </p>
+      <!-- Dress Code -->
+      <div >
+        <nobr style="font-family:Baker; font-size:24pt;">Dress Code</nobr><br>
+        <img
+          class="w3-image"
+          src="{% static 'images/dress-sample.png' %}"
+          alt="Dress Sample"
+          style="min-width: 10%; max-width: 150px;"/>
+        <br>
+        <div class = "w3-content" style="position: relative; line-height: 1;">
+          <span style="line-height: 1.5;">Ninong</span><br>
+          <span style="font-family: Forum; font-size: 16pt; line-height: 0.5;">Black Coat and Tie<br>Black Pants and Shoes</span>
+        </div>
+        <div style="line-height: 1;">
+          <span style="line-height: 1.5;">Ninang</span><br>
+          <span style="font-family: Forum; font-size: 16pt;">Long Dress</span>
+        </div>
+        <div style="line-height: 1;">
+            <br>Guests<br>
+            <span style="font-family: Forum; font-size: 16pt;line-height: 0.5;">Semi-formal</span>
+            <br><br>
+            In shades of
+            <br>
+            <img
+              class="w3-image"
+              src="{% static 'images/palette.png' %}"
+              alt="Dress Sample"
+              style="min-width: 10%; max-width: 240px;"/>
+            <br>
+        </div>
+      </div>
+      
+      <!-- Gift Notes -->
+      <div class = "w3-container" style="line-height: 1.5; padding-top: 64px;">
+        <img
+          class="w3-image"
+          src="{% static 'images/flower2.png' %}"
+          style="min-width: 10%; width: 300px;"/><br>      
+        <span style="font-family:Baker; font-size:24pt;">Gift Notes</span><br>
+        <span style="font-family:Forum; font-size:16pt; ">Your presence at our wedding is the only present we
+                                                          request. However, if you wish to bless our special day,
+                                                          monetary gifts will be very much appreciated.</span><br>
+      </div>
+
+      <!-- Safety Reminders -->
+      <div class = "w3-container" style="line-height: 1.5; padding-top: 16px; ">
+        <img
+          class="w3-image"
+          src="{% static 'images/flower2.png' %}"
+          style="min-width: 10%; width: 300px;"/><br>      
+        <span style="font-family:Baker; font-size:24pt;">Safety Reminders</span><br>
+        <span style="font-family:Forum; font-size:16pt; ">For the safety of our guests and our newlyweds, we are requesting
+                                                          that all in attendance have been fully vaccinated with a booster.<br>This
+                                                          means you have been fully vaccinated and boosted.</span><br>
+      </div>
+      <!-- Capture The Love -->
+      <div class = "w3-container" style="line-height: 1.5; padding-top: 16px; ;">
+        <img
+          class="w3-image"
+          src="{% static 'images/flower2.png' %}"
+          style="min-width: 10%; width: 300px;"/><br>      
+        <span style="font-family:Baker; font-size:24pt;">Capture the Love</span><br>
+        <img
+          class="w3-image"
+          src="{% static 'images/instagram.png' %}"
+          style="min-width: 5%; width: 30px;"/>    
+        <img
+          class="w3-image"
+          src="{% static 'images/facebook.png' %}"
+          style="min-width: 5%; width: 30px;"/><br>     
+        <span style="font-family:Forum; font-size:16pt; ">Tag your photos on our special day so we can see things on your way. 
+                                                          Please tag us using our official hashtag.</span><br>
+        <span style="font-family:Baker; font-size:18pt; color: #9B6250; line-height: 3;">#PATnallymatchedwithRENZ</span><br>
+      </div>
+      
+          
+    </div>
+</div>  
+<!-- end of Details Section for Small Screens -->
+
+<!-- We Hope You Can Make It -->
+<div class="w3-content w3-center w3-hide-small  w3-hide-medium" style="min-width:100%;" id="rsvp">
+  <div style="position: relative">
+    <img
+    class="w3-image"
+    src="{% static 'images/make-it-2.png' %}"
+    alt="Image 1"
+    style="min-width: 100%"/>
+    <p  class = "vertical-center w3-half w3-left" 
+        style = "background-color: transparent; margin-left: 20%;
+                text-align: left; line-height: 1;" >
+        <span style="font-family: Madelyn; font-size: 50pt; line-height: 1.5;">We hope you can make it!</span><br>
+        <span style="font-family: Forum; font-size: 18pt; letter-spacing: 0.1pt; line-height: 1.2;">To confirm your attendance, <br>please fill up the Google Form in the link below.</span><br>
+        <button style = "width: 150px; margin-top:16px;
+                        border-color: black; border-width: 0.2px; background-color: transparent; 
+                        line-height: 1.5;">
+          <b><a class = "rsvp-button" href="https://docs.google.com/forms/d/e/1FAIpQLSfwur86-iH_-uLz3O8sVk-5z2B3VCJXTmLzSrccgHBRj7CBSw/viewform" target="_blank">
+            RSVP
+          </a></b>
+        </button>
+        <br><br>
+        <span style="font-family: Forum; font-size: 18pt; letter-spacing: 0.1pt; line-height: 1.2;">We kindly request your response by <b>December 18, 2022</b>.<br>For questions, feel free to contact us at 09426039491.</span><br><br>
+        <span style="font-family: Forum; font-size: 20pt; letter-spacing: 0.1pt; ">Cheers!<br></span><br><br>
+       
+    </p>
+  </div>
+</div> 
+
+<!-- We Hope You Can Make It for Small screens-->
+<div class="w3-hide-large" style="min-width:100%; background-color:#EDCBB8;" id="rsvp-mobile">
+    <div style = "margin-left: 16pt; margin-right: 10pt;
+                line-height: 1.1; padding-top: 60px; "  >
+        <span style="font-family: Madelyn; font-size: 6vmax; line-height: 1.1; text-align: center;">We hope you can make it!</span><br>
+          <span style="font-family: Forum; font-size: 2.2vmax; letter-spacing: 0.1pt; text-align: left;">To confirm your attendance, please fill up the Google Form in the link below.</span><br>
+          <button style = "width: 20%;
+                          border-color: black; border-width: 0.2px; background-color: transparent; 
+                          line-height: 2;">
+            <b><a class = "rsvp-button" href="https://docs.google.com/forms/d/e/1FAIpQLSfwur86-iH_-uLz3O8sVk-5z2B3VCJXTmLzSrccgHBRj7CBSw/viewform" target="_blank" style="font-size: 2.2vmax;  text-align: left;">
+              RSVP
+            </a></b>
+          </button>
+          <br>
+          <span style="font-family: Forum; font-size: 2.2vmax; letter-spacing: 0.1pt; line-height: 1.2;">We kindly request your response by
+                                                                                                      <nobr><b>December 18, 2022</b>.</nobr><br>
+                                                                                                      For questions, feel free to contact us at 09426039491.</span><br>
+          <span style="font-family: Forum; font-size: 2.5vmax; letter-spacing: 0.1pt; ">Cheers!<br></span>
+          <img
+          class="w3-image"
+          src="{% static 'images/make-it.png' %}"
+          alt="Image 1"
+          style="width: 50%; background-color: #EDCBB8;"/>
+       
+    </div>
+</div>  
+<!-- end of Make-it -->
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-center w3-xlarge">
+    <div class="w3-section">
+    <a href="https://www.facebook.com/rainbacani27" target="_blank">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        
+    <a href="https://www.instagram/makeitrainiell" target="_blank">
+      <i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="mailto:rainbacani27@gmail.com" target="_blank">
+      <i class="fa fa-envelope w3-hover-opacity"></i></a>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+    <p class="w3-large">
+    Created by
+    <a  href="https://www.linkedin.com/in/rainiell-bacani-7948b2164/"
+        target="_blank"
+        class="w3-hover-text-brown"
+        >Rain Bacani</a>
+    <br />
+    </p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
